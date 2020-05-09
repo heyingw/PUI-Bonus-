@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>  
+    <style>
+        #app,p{
+            font-size: 30px;
+            text-align: center;
+        }
+
+        button{
+            margin-top: 40px;
+            font-size: 25px;
+            padding: 30px;
+            border-radius:60%;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="app">
+    <h1>{{ username}}</h1>
+</div>
+
+<p>
+    <button onclick="myFunction()">Change the name!</button>
+</p>
+  
+<script>
+  var myDemo = new Vue({
+    el: '#app',
+    data: {username: 'Heying Wang'}
+  })
+
+
+function myFunction() {
+    myDemo.username = "John Doe";
+}
+</script>   
+
+</body>
+
+
+
+</html>
